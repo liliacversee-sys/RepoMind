@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+gitpython
+networkx
+tree-sitter
+tree-sitter-languages
+python-multipart
+python-dotenv
+faiss-cpu
+numpy
+sentence-transformers
+
+ollama
