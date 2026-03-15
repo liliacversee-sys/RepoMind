@@ -2,6 +2,32 @@
 
 This repository contains a FastAPI backend for code repository analysis and LLM-based code question answering.
 
+
+# workflow 
+
+User enters GitHub repository
+        ↓
+Repository cloned
+        ↓
+Files scanned
+        ↓
+Tree-sitter parses code
+        ↓
+Dependency graph created
+        ↓
+Code chunks embedded
+        ↓
+FAISS vector index built
+        ↓
+User asks question
+        ↓
+Vector search + keyword search retrieve code
+        ↓
+Relevant code passed to LLM
+        ↓
+LLM generates explanation
+
+
 ## Setup
 
 1. Create and activate Python virtual environment:
@@ -129,3 +155,4 @@ flowchart TD
 5. Debugging tips:
    - If `readthedocs` cross-service path is not working, curl endpoints directly with Postman.
    - Monitor logs for parser errors and `tree_sitter` parse failures.
+     
